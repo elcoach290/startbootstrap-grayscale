@@ -7,8 +7,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: black;
+  color: #212121;
+  background-color: #FFFFFF;
 }
 html {
   width: 100%;
@@ -39,7 +39,7 @@ p {
   }
 }
 a {
-  color: orange;
+  color: #FF5722;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -47,21 +47,48 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #996300;
+  color: #bb2d00;
 }
-.light {
-  font-weight: 400;
+.logo {
+  display: inline-flex;
+  letter-spacing: 0;
+  -ms-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+.logo i {
+  font-style: normal;
+  transform: skew(15deg);
+}
+.logo__mar {
+  justify-content: center;
+  display: inline-flex;
+  background-color: #E64A19;
+  color: #FFEB3B;
+  padding: .1em .3em;
+  width: 50%;
+  transform: skew(-15deg);
+}
+.logo__ios {
+  justify-content: center;
+  display: inline-flex;
+  background-color: #FFEB3B;
+  color: #E64A19;
+  padding: .1em .4em;
+  width: 50%;
+  transform: skew(-15deg) translateY(10%);
 }
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: black;
+  background-color: #FFFFFF;
+  color: #FF5722;
 }
 .navbar-custom .navbar-toggle {
-  color: white;
-  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFEB3B;
+  background-color: #FF5722;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -75,7 +102,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: white;
+  color: inherit;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -83,7 +110,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: #FFEB3B;
   outline: none;
   background-color: transparent;
 }
@@ -96,13 +123,15 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #FF5722;
+  color: #FFEB3B;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
 @media (min-width: 768px) {
   .navbar-custom {
+    color: #FFFFFF;
     padding: 20px 0;
     border-bottom: none;
     letter-spacing: 1px;
@@ -113,8 +142,15 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: black;
+    background: #FFFFFF;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FF5722;
+  }
+  .navbar-custom.top-nav-collapse a:hover {
+    color: #E64A19 !important;
+  }
+  .navbar-custom.top-nav-collapse .active a:hover {
+    color: #FFEB3B !important;
   }
 }
 .intro {
@@ -123,8 +159,8 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: white;
-  background-color: black;
+  color: #FFCCBC;
+  background-color: #FF5722;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -157,10 +193,10 @@ a:focus {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid white;
+  border: 2px solid #FFEB3B;
   border-radius: 100% !important;
   font-size: 40px;
-  color: white;
+  color: #FFEB3B;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
@@ -169,8 +205,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
+  color: #FFEB3B;
+  background: rgba(230, 74, 25, 0.8);
 }
 .btn-circle i.animated {
   -webkit-transition-property: -webkit-transform;
@@ -257,16 +293,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid orange;
-  color: orange;
+  border: 1px solid #FF5722;
+  color: #FF5722;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid orange;
+  border: 1px solid #FF5722;
   outline: none;
   color: black;
-  background-color: orange;
+  background-color: #FF5722;
 }
 ul.banner-social-buttons {
   margin-top: 0;
