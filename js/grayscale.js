@@ -61,7 +61,7 @@ function init() {
             "featureType": "water",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#39c0ff"
             }, {
                 "lightness": 17
             }]
@@ -69,15 +69,15 @@ function init() {
             "featureType": "landscape",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#212121"
             }, {
-                "lightness": 20
+                "lightness": 50
             }]
         }, {
             "featureType": "road.highway",
             "elementType": "geometry.fill",
             "stylers": [{
-                "color": "#000000"
+                "color": "#FF5722"
             }, {
                 "lightness": 17
             }]
@@ -85,7 +85,7 @@ function init() {
             "featureType": "road.highway",
             "elementType": "geometry.stroke",
             "stylers": [{
-                "color": "#000000"
+                "color": "#FFEB3B"
             }, {
                 "lightness": 29
             }, {
@@ -95,7 +95,7 @@ function init() {
             "featureType": "road.arterial",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#E64A19"
             }, {
                 "lightness": 18
             }]
@@ -103,7 +103,7 @@ function init() {
             "featureType": "road.local",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#FFCCBC"
             }, {
                 "lightness": 16
             }]
@@ -111,14 +111,14 @@ function init() {
             "featureType": "poi",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#000000"
+                "color": "#FFCCBC"
             }, {
                 "lightness": 21
             }]
         }, {
             "elementType": "labels.text.stroke",
             "stylers": [{
-                "visibility": "on"
+                "visibility": "OFF"
             }, {
                 "color": "#000000"
             }, {
@@ -129,7 +129,7 @@ function init() {
             "stylers": [{
                 "saturation": 36
             }, {
-                "color": "#000000"
+                "color": "#FFFFFF"
             }, {
                 "lightness": 40
             }]

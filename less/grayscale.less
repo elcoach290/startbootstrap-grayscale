@@ -25,6 +25,7 @@ h6 {
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    color: @primary;
 }
 
 p {
@@ -79,14 +80,14 @@ a {
         color: @dark-primary;
         padding: .1em .4em;
         width: 50%;
-        transform: skew(-15deg) translateY(10%);
+        transform: skew(-15deg) translate(-5%,10%);
 
     }
 }
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid fade(white, 30%);
+    border-bottom: 1px solid @primary;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: @text-icons;
@@ -150,7 +151,7 @@ a {
         &.top-nav-collapse {
             padding: 0;
             background: @text-icons;
-            border-bottom: 1px solid fade(white, 30%);
+            border-bottom: 1px solid @primary;
             color: @primary;
             a:hover{
                 color: @dark-primary !important;    
@@ -169,13 +170,25 @@ a {
     padding: 100px 0;
     text-align: center;
     color: @light-primary;
-    //background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/mac@2x.jpg) no-repeat bottom center fixed;
     background-color: @primary;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: fade(@primary,100%);
+        opacity: 0.8;
+    }
     .intro-body {
+        position: relative;
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
@@ -205,10 +218,10 @@ a {
     margin-top: 15px;
     padding: 7px 16px;
     border: 2px solid @accent-color;
-    border-radius: 100% !important;
     font-size: 40px;
     color: @accent-color;
     background: transparent;
+    transform: skew(-10deg);
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
@@ -219,6 +232,7 @@ a {
         background: fade(@dark-primary, 80%);
     }
     i.animated {
+        transform: skew(10deg);
         -webkit-transition-property: -webkit-transform;
         -webkit-transition-duration: 1s;
         -moz-transition-property: -moz-transform;
@@ -240,35 +254,35 @@ a {
 
 @-webkit-keyframes pulse {
     0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(1) skew(10deg);
+        transform: scale(1) skew(10deg);
     }
 
     50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2) skew(10deg);
+        transform: scale(1.2) skew(10deg);
     }
 
     100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+        -webkit-transform: scale(1) skew(10deg);
+        transform: scale(1) skew(10deg);
     }
 }
 
 @-moz-keyframes pulse {
     0% {
-        -moz-transform: scale(1);
-        transform: scale(1);
+        -moz-transform: scale(1) skew(10deg);
+        transform: scale(1) skew(10deg);
     }
 
     50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
+        -moz-transform: scale(1.2) skew(10deg);
+        transform: scale(1.2) skew(10deg);
     }
 
     100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
+        -moz-transform: scale(1) skew(10deg);
+        transform: scale(1) skew(10deg);
     }
 }
 
@@ -280,12 +294,23 @@ a {
     width: 100%;
     padding: 50px 0;
     color: white;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../img/mac@2x.jpg) no-repeat center center fixed;
     background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: fade(@accent-color,100%);
+        opacity: 0.8;
+    }
 }
 
 #map {
@@ -378,6 +403,22 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: fade(white, 20%);
+}
+
+.icon-wrapper{
+    width: 150px;
+    height: 150px;
+    background-color: @primary;
+    transform: skew(-10deg);
+    color: @accent-color;
+    display: inline-flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+    i{
+      transform: skew(10deg);  
+    }
 }
 
 #about{
