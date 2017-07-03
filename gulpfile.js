@@ -32,7 +32,7 @@ gulp.task('minify-css', ['less'], function() {
     return gulp.src('docs/css/grayscale.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('docs/css/'))
         .pipe(browserSync.reload({
             stream: true
         }))

@@ -352,7 +352,7 @@ a {
     &:focus {
         border: 1px solid @primary;
         outline: none;
-        color: black;
+        color: @accent-color;
         background-color: @primary;
     }
 }
@@ -424,3 +424,43 @@ body {
 #about{
     //background-color: @light-primary;
 }
+.card-wrapper{
+    display: inline-block;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.8);
+  border-radius: 50%;
+  transition: all 300ms linear;
+  &__face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    
+    &--back{
+        opacity: 0;
+        transition: opacity 250ms;
+    }
+  }
+  &:hover .card__face--back{
+    opacity: 1;
+  }
+}
+
+
+
+
+
+

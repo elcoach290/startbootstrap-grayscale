@@ -3,6 +3,7 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+/* hello */
 body {
   width: 100%;
   height: 100%;
@@ -25,7 +26,7 @@ h6 {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #FF5722;
+  color: #3F51B5;
 }
 p {
   margin: 0 0 25px;
@@ -40,7 +41,7 @@ p {
   }
 }
 a {
-  color: #FF5722;
+  color: #3F51B5;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -48,7 +49,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #bb2d00;
+  color: #252f69;
 }
 .logo {
   display: inline-flex;
@@ -64,8 +65,8 @@ a:focus {
 .logo__mar {
   justify-content: center;
   display: inline-flex;
-  background-color: #E64A19;
-  color: #FFEB3B;
+  background-color: #303F9F;
+  color: #FF4081;
   padding: .1em .3em;
   width: 50%;
   transform: skew(-15deg);
@@ -73,23 +74,23 @@ a:focus {
 .logo__ios {
   justify-content: center;
   display: inline-flex;
-  background-color: #FFEB3B;
-  color: #E64A19;
+  background-color: #FF4081;
+  color: #303F9F;
   padding: .1em .4em;
   width: 50%;
   transform: skew(-15deg) translate(-5%, 10%);
 }
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid #FF5722;
+  border-bottom: 1px solid #3F51B5;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FFFFFF;
-  color: #FF5722;
+  color: #3F51B5;
 }
 .navbar-custom .navbar-toggle {
-  color: #FFEB3B;
-  background-color: #FF5722;
+  color: #FF4081;
+  background-color: #3F51B5;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -111,7 +112,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: #FFEB3B;
+  color: #FF4081;
   outline: none;
   background-color: transparent;
 }
@@ -124,8 +125,8 @@ a:focus {
   outline: none;
 }
 .navbar-custom .nav li.active a {
-  background-color: #FF5722;
-  color: #FFEB3B;
+  background-color: #3F51B5;
+  color: #FF4081;
 }
 .navbar-custom .nav li.active a:hover {
   color: white;
@@ -144,14 +145,14 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #FFFFFF;
-    border-bottom: 1px solid #FF5722;
-    color: #FF5722;
+    border-bottom: 1px solid #3F51B5;
+    color: #3F51B5;
   }
   .navbar-custom.top-nav-collapse a:hover {
-    color: #E64A19 !important;
+    color: #303F9F !important;
   }
   .navbar-custom.top-nav-collapse .active a:hover {
-    color: #FFEB3B !important;
+    color: #FF4081 !important;
   }
 }
 .intro {
@@ -160,9 +161,9 @@ a:focus {
   height: auto;
   padding: 100px 0;
   text-align: center;
-  color: #FFCCBC;
+  color: #C5CAE9;
   background: url(../img/mac@2x.jpg) no-repeat bottom center fixed;
-  background-color: #FF5722;
+  background-color: #3F51B5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -176,7 +177,7 @@ a:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff5722;
+  background-color: #3f51b5;
   opacity: 0.8;
 }
 .intro .intro-body {
@@ -207,9 +208,9 @@ a:focus {
   height: 70px;
   margin-top: 15px;
   padding: 7px 16px;
-  border: 2px solid #FFEB3B;
+  border: 2px solid #FF4081;
   font-size: 40px;
-  color: #FFEB3B;
+  color: #FF4081;
   background: transparent;
   transform: skew(-10deg);
   -webkit-transition: background 0.3s ease-in-out;
@@ -219,8 +220,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
-  color: #FFEB3B;
-  background: rgba(230, 74, 25, 0.8);
+  color: #FF4081;
+  background: rgba(48, 63, 159, 0.8);
 }
 .btn-circle i.animated {
   transform: skew(10deg);
@@ -289,7 +290,7 @@ a:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffeb3b;
+  background-color: #ff4081;
   opacity: 0.8;
 }
 #map {
@@ -319,16 +320,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #FF5722;
-  color: #FF5722;
+  border: 1px solid #3F51B5;
+  color: #3F51B5;
   background-color: transparent;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #FF5722;
+  border: 1px solid #3F51B5;
   outline: none;
-  color: black;
-  background-color: #FF5722;
+  color: #FF4081;
+  background-color: #3F51B5;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -376,9 +377,9 @@ body {
 .icon-wrapper {
   width: 150px;
   height: 150px;
-  background-color: #FF5722;
+  background-color: #3F51B5;
   transform: skew(-10deg);
-  color: #FFEB3B;
+  color: #FF4081;
   display: inline-flex;
   justify-content: center;
   -ms-align-items: center;
@@ -387,4 +388,36 @@ body {
 }
 .icon-wrapper i {
   transform: skew(10deg);
+}
+.card-wrapper {
+  display: inline-block;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+}
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.8);
+  border-radius: 50%;
+  transition: all 300ms linear;
+}
+.card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+.card__face--back {
+  opacity: 0;
+  transition: opacity 250ms;
+}
+.card:hover .card__face--back {
+  opacity: 1;
 }
