@@ -83,6 +83,9 @@ a {
         transform: skew(-15deg) translate(-5%,10%);
 
     }
+    &__hidden{
+        display: none;
+    }
 }
 
 .navbar-custom {
@@ -102,7 +105,10 @@ a {
         }
     }
     .navbar-brand {
-        font-weight: 700;
+        &__name{
+            font-weight: 100;
+            text-transform: capitalize;
+        }
         &:focus {
             outline: none;
         }

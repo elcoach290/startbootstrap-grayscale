@@ -80,6 +80,9 @@ a:focus {
   width: 50%;
   transform: skew(-15deg) translate(-5%, 10%);
 }
+.logo__hidden {
+  display: none;
+}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid #3F51B5;
@@ -97,8 +100,9 @@ a:focus {
 .navbar-custom .navbar-toggle:active {
   outline: none;
 }
-.navbar-custom .navbar-brand {
-  font-weight: 700;
+.navbar-custom .navbar-brand__name {
+  font-weight: 100;
+  text-transform: capitalize;
 }
 .navbar-custom .navbar-brand:focus {
   outline: none;
